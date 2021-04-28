@@ -1,18 +1,32 @@
-import { IsNumber, IsString } from 'class-validator';
+import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
 
 export class WeatherResponse {
     @IsString()
-    name: String;
+    name: string;
 
     @IsString()
-    country: String;
+    country: string;
 
     @IsNumber()
     temperature: Number;
 
     @IsString()
-    weather: String;
+    weatherIcon: string;
 
     @IsString()
-    weatherDescription: String;
+    weatherDescription: string;
+
+    constructor(
+        name: string,
+        country: string,
+        temperature: Number,
+        weatherIcon: string,
+        weatherDescription: string,
+    ) {
+        this.name = name;
+        this.country = country;
+        this.temperature = temperature;
+        this.weatherIcon = weatherIcon;
+        this.weatherDescription = weatherDescription;
+    }
 }
