@@ -1,4 +1,4 @@
-@RBC-Ventures-team 😃 please find more information about the app in the UI's readme: https://github.com/Zeavz/weather-app-ui/blob/develop/README.md
+
 
 ---
 <p align="center">
